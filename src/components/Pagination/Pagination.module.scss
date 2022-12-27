@@ -1,0 +1,38 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    :global {
+        .selected {
+            a {
+                background: #fe5f1e;
+                color: #fff;
+            }
+        }
+    }
+
+    li {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        a {
+            display: inline-flex;
+            border: 1px solid #fe5f1e;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.15s ease-in-out;
+            color: #fe5f1e;
+
+            &:hover {
+                background: #fe5f1e;
+                color: #fff;
+            }
+        }
+    }
+}
